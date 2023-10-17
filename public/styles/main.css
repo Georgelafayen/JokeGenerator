@@ -1,0 +1,75 @@
+body{
+    min-height: 100vh;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.mainBox{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    width: 400px;
+    height: 400px;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+
+.form{
+    width: 800px;
+}
+
+.select{
+    width: 150px;
+    height: 30px;
+    background-color: #F1EFEF;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.btn{
+    width: 66px;
+    height: 30px;
+    border-radius: 25px;
+    border-width: 1px;
+}
+
+
+p{
+    width: 1000px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.joke{
+    animation: fadeIn1 2s ;
+    
+}
+
+.setup{
+    animation: fadeIn1 2s;
+}
+
+.delivery{
+    animation: fadeIn2 4s;
+}
+
+@keyframes fadeIn1 {
+    0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+  
+@keyframes fadeIn2 {
+    0% { opacity: 0; }
+   50% { opacity: 0; }
+  100% { opacity: 1; }
+}

@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="main.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <title>Joke Generator</title>
+</head>
+
+<body>
+  <div class="mainBox">
+    <img src="giphy.gif" alt="">
+    <h1> How about a bad joke? </h1>
+
+    <form action="/" id="form" class="form" method="post">
+      <select name="category" class="select">
+        <option value="Any">Any</option>
+        <option value="Programming">Programming</option>
+        <option value="Misc">Misc</option>
+        <option value="Dark">Dark</option>
+        <option value="Pun">Pun</option>
+      </select>
+      <select name="type" class="select">
+        <option value="single">Single</option>
+        <option value="twopart">Two-part</option>
+      </select>
+      <button type="submit" class="btn">Go</button>
+    </form>
+
+    
+
+    <% if(joke) { %>
+      <p class="joke">
+        <%= joke %>
+      </p>
+      <% } else { %>
+        <p class="setup">
+          <%= setup %>
+        </p>
+        <p class="delivery">
+          <%= delivery %>
+        </p>
+        <% } %>
+
+
+  </div>
+</body>
+
+</html>
