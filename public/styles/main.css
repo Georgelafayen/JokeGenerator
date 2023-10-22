@@ -5,7 +5,7 @@ html {
 
 body {
   text-align: center;
-  font-family: 'Pridi',serif;
+  font-family: 'Pridi', serif;
 }
 
 .mainBox {
@@ -24,9 +24,9 @@ img {
 
 h1 {
   font-size: 70px;
-  font-weight: 500 ;
+  font-weight: 500;
   line-height: 1;
-  margin:0 0 40px 0;
+  margin: 0 0 40px 0;
   text-shadow: 2px 5px #00000019;
 }
 
@@ -73,12 +73,12 @@ p {
 }
 
 .joke {
-  font-weight: 300 ;
+  font-weight: 300;
   animation: fadeIn1 2s;
 }
 
 .setup {
-  font-weight: 300 ;
+  font-weight: 300;
   animation: fadeIn1 2s;
 }
 
@@ -107,7 +107,7 @@ p {
 }
 
 .button-26__text {
-  font-family: 'Pridi',serif ;
+  font-family: 'Pridi', serif;
   color: #888;
   display: block;
   transform: translate3d(0, -4px, 0);
@@ -264,3 +264,88 @@ p {
   }
 }
 
+@media screen and (max-height: 720px) {
+  .mainBox {
+    margin-top: 0px;
+
+  }
+
+  h1 {
+    font-size: 30px;
+    margin-bottom: 16px;
+  }
+
+  img {
+    width: 200px;
+    height: 120px;
+  }
+
+  .button-26 {
+    font-size: 12px;
+  }
+
+  .button-26__content {
+    padding: 8px 16px;
+  }
+
+  .jokeContainer {
+    margin: 0;
+  }
+
+  p {
+    font-size: 16px;
+    padding: 5px; 
+  }
+
+  .mo-fire {
+    height: 280px;
+    width:  500px;
+    position: fixed;
+    bottom: -80px;
+    z-index: 4;
+  }
+
+
+}
+
+@media (max-width: 1920px) and (max-height: 1080px) {
+  .mainBox {
+    margin-top: 0px;
+
+  }
+
+  h1 {
+    font-size: 50px;
+    margin-bottom: 16px;
+  }
+
+  img {
+    width: 300px;
+    height: 180px;
+  }
+
+  .button-26 {
+    font-size: 16px;
+  }
+
+  .button-26__content {
+    padding: 10px 18px;
+  }
+
+  .jokeContainer {
+    margin: 0;
+  }
+
+  p {
+    font-size: 20px;
+    padding: 10px; 
+  }
+
+  .mo-fire {
+    height: 380px;
+    width:  800px;
+    position: fixed;
+    bottom: -80px;
+    z-index: 4;
+  }
+}
